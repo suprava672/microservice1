@@ -23,5 +23,7 @@ public class User {
     private String password;
 
     transient private List<Book> books;
+    transient private List<ReviewOfBook>  review;
 
+    private String roles;
 }

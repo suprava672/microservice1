@@ -1,16 +1,17 @@
 package com.example.review.entity;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.awt.print.Book;
 import java.time.LocalDateTime;
-
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Table(name="reviewInformation")
 public class ReviewOfBook {
     @Id
@@ -21,4 +22,8 @@ public class ReviewOfBook {
     private Long userId;
     private Long bookId;
     private LocalDateTime reviewDate;
+
 }
+
+
+

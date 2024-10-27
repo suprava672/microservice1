@@ -20,7 +20,9 @@ public class ReviewService {
         return reviewRepository.findByUserId(userId);
 
     }
+
 public List<ReviewOfBook> getReviewByBookId(Long bookId){
+
         return reviewRepository.findByBookId(bookId);
 }
 public ReviewOfBook updateReview(ReviewOfBook review,Long reviewId){
